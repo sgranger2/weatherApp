@@ -1,5 +1,6 @@
 html {
   height: 100%;
+  overflow: hidden;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
   background-attachment: fixed;
   height: 99vh; 
   padding-bottom: 1px;
+  overflow: hidden;
 }
 
 .App {
@@ -405,7 +407,7 @@ li {
 
 @media screen and (max-width: 490px) {
   body {
-    height: 105vh;
+    height: 115vh;
   }
   .forecast-content {
     padding-top: 85px;
