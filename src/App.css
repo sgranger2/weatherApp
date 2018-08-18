@@ -9,7 +9,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 100vh;
+  height: 95vh; 
+  /* padding-bottom: 1px; */
+  border: 1px solid transparent;
 }
 
 .App {
