@@ -12,7 +12,6 @@ body {
   background-attachment: fixed;
   height: 99vh; 
   padding-bottom: 1px;
-  overflow: hidden;
 }
 
 .App {
