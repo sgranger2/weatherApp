@@ -9,9 +9,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 95vh; 
-  /* padding-bottom: 1px; */
-  border: 1px solid transparent;
+  height: 99vh; 
+  padding-bottom: 1px;
 }
 
 .App {
@@ -405,6 +404,9 @@ li {
 }
 
 @media screen and (max-width: 490px) {
+  body {
+    height: 105vh;
+  }
   .forecast-content {
     padding-top: 85px;
   }
