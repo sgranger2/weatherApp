@@ -407,6 +407,7 @@ li {
 @media screen and (max-width: 490px) {
   body {
     height: 115vh;
+    padding-bottom: 20px;
   }
   .forecast-content {
     padding-top: 85px;
