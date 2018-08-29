@@ -1,12 +1,10 @@
 import React from 'react';
-// const api = require ('../utils/api');
 const Link = require('react-router-dom').Link;
 
 
-class GetWeather extends React.Component {
+class UpdateLocation extends React.Component {
     state = {
-        locationInput: '',
-        currentWeather: null,
+        locationInput: ''
     }
 
     handleUpdateLocation = (e) => {
@@ -36,4 +34,4 @@ class GetWeather extends React.Component {
     }
 }
 
-export default GetWeather;
+export default UpdateLocation;
