@@ -3,3 +3,7 @@ I created this app using NodeJS, ReactJS, and the weather API provided by https:
 I am proud to say that this is the first ReactJS project I have completed on my own. This project was created to show myself, along with potential employers, that I have gained knowledge in important technologies needed by today's web development industry.
 
 NOTE: Website may take 30 seconds to load because I am using a free hosting service.
+
+Coming this week: 
+  *Web App will load instantly, no longer requiring user to wait 30 seconds
+  *Transforming this into a Progressive Web App to improve user experience
