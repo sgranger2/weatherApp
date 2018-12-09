@@ -18,6 +18,7 @@ class Forecast extends React.Component {
 
     componentDidMount() {
         let cityState = queryString.parse(this.props.location.search);
+        console.log(cityState);
         cityState = cityState.location;
         this.makeRequest(cityState);
     }
