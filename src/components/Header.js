@@ -8,7 +8,7 @@ const Header = (props) => {
         <header className="App-header">
             <div className='logoText' >
                 <img src={logo} className="App-logo" alt="logo"  />
-                <Link className='title' to='/'>Shane's ReactJS Weather App</Link>
+                <Link className='title' to='/weatherApp'>Shane's ReactJS Weather App</Link>
             </div>
             <div>
                 <UpdateLocation className='header-inputbox' layout='input-nav-container' inputStyle='input-nav' weatherStyle='btn-nav' />

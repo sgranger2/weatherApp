@@ -17,9 +17,9 @@ class App extends Component {
         <div className="App">
           <Header />
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route exact path='/forecast' component={Forecast} />
-            <Route exact path='/details/:day' component={Details} />
+            <Route exact path='/weatherApp' component={Home} />
+            <Route exact path='/weatherApp/forecast' component={Forecast} />
+            <Route exact path='/weatherApp/details/:day' component={Details} />
             <Route render={() => {
               return <p><strong>Page Not Found</strong></p>
             }} />

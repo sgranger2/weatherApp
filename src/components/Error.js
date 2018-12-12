@@ -21,7 +21,7 @@ class Error extends React.Component {
                 <Link
                     className='btn-body btn-submit'
                     to={{
-                        pathname: '/',
+                        pathname: '/weatherApp',
                     }}>
                     Back
                 </Link>

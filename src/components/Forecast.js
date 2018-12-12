@@ -41,7 +41,7 @@ class Forecast extends React.Component {
     handleClick(day) {
         console.log(this.state.city);
         this.props.history.push({
-            pathname: '/details/' + day.date,
+            pathname: '/weatherApp/details/' + day.date,
             search: 'location=' + this.state.city, 
             state: {calendarDate: day.date, details: day.day, city: this.state.city},
         })

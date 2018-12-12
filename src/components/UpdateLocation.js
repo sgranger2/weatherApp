@@ -24,7 +24,7 @@ class UpdateLocation extends React.Component {
                 <Link 
                     className={styleClasses} 
                     to={{
-                        pathname: '/forecast',
+                        pathname: '/weatherApp/forecast',
                         search: '?location=' + this.state.locationInput
                     }}>
                     Get Weather
