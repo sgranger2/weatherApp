@@ -5,7 +5,6 @@ import Home from './components/Home';
 import Forecast from './components/Forecast';
 import Details from './components/Details';
 const ReactRouter = require('react-router-dom');
-const Router = ReactRouter.BrowserRouter;
 const Route = ReactRouter.Route;
 const Switch = ReactRouter.Switch;
 
@@ -13,7 +12,6 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
         <div className="App">
           <Header />
           <Switch>
@@ -25,8 +23,6 @@ class App extends Component {
             }} />
           </Switch>
         </div>
-      </Router>
-
     );
   }
 }
