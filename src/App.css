@@ -342,6 +342,7 @@ li {
   text-align: center;
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
+  cursor: pointer;
 }
 
 .day:hover {

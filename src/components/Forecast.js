@@ -3,7 +3,7 @@ import Loading from './Loading';
 import Location from './Location';
 import Error from './Error';
 import ForecastDay from './ForecastDay';
-const queryString = require('query-string');
+const queryString = require('qs');
 const api = require('../utils/api');
 const Link = require('react-router-dom').Link;
 
@@ -18,14 +18,13 @@ class Forecast extends React.Component {
 
     componentDidMount() {
         let cityState = queryString.parse(this.props.location.search);
-        console.log(cityState);
-        cityState = cityState.location;
+        cityState = Object.values(cityState);
         this.makeRequest(cityState);
     }
 
     componentWillReceiveProps(nextProps) {
         let cityState = queryString.parse(nextProps.location.search);
-        cityState = cityState.location;
+        cityState = Object.values(cityState);
         this.makeRequest(cityState);
     }
 
@@ -33,7 +32,6 @@ class Forecast extends React.Component {
         this.setState({ loading: true });
         api.getForecast(city).then((results) => {
             this.setState({ loading: false, forecast: results.forecast.forecastday, city: results.location.name + ', ' + results.location.region });
-            console.log(results);
         }).catch((error) => {
             console.log('Error :' + error.code);
             this.setState({ error: true });
