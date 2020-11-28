@@ -1,7 +1,7 @@
 var axios = require('axios');
 
-var _currentWeatherURL = 'https://api.apixu.com/v1/current.json?key=56b51956b6a5486a852145612181307&q=';
-var _forecastURL = 'https://api.apixu.com/v1/forecast.json?key=56b51956b6a5486a852145612181307&q=';
+var _currentWeatherURL = 'http://api.weatherstack.com/current?access_key=d4dd0913626224fbf6071a1d008ff7cd&query=';
+var _forecastURL = 'http://api.weatherstack.com/forecast?access_key=d4dd0913626224fbf6071a1d008ff7cd&query=';
 
 module.exports = {
   getCurrentWeather: (location) => {
@@ -18,7 +18,7 @@ module.exports = {
     });
   },
   getForecast: (location) => {
-    return axios.get(`${_forecastURL}` + location + '&days=5').then((response) => {
+    return axios.get(`${_forecastURL}` + location + '&forecast_days=5').then((response) => {
       return response.data;
     })
     .catch((error) => {
